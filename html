@@ -1,0 +1,31 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+<!--Metatagtodefinethecharacterencodingforthedocument-->
+<metacharset="UTF-8">
+<!--Metatagtomakethepageresponsiveondifferentdevices(viewportscaling)-->
+<metaname="viewport"content="width=device-width,initial-scale=1.0">
+<!--Titleofthepage (appearsin thebrowser tab)-->
+<title>EmojiDesigner</title>
+<!--Linktotheexternal stylesheetforthepage'sstyling-->
+<linkrel="stylesheet"href="styles.css">
+</head>
+<body>
+<!--Main containerfortheemojidesignerinterface-->
+<div class="container">
+<!--Heading forthepage -->
+<h1>EmojiDesigner</h1>
+<!--Inputfieldwheretheusercantype anemotionorphrase-->
+<inputtype="text"id="emotion"placeholder="Describeanemotion..."aria-label="Describean
+emotion">
+<!--Buttonthattriggerstheemojigenerationbasedontheenteredemotion-->
+<buttononclick="generateEmojis()">GenerateOptions</button>
+<!--Divwheretheemojioptionswillbedisplayeddynamically-->
+<divclass="emoji-options" id="emojiOptions"></div>
+<!--Divwheretheselectedemojiwill bedisplayedafterthe userselectsone-->
+<divclass="selected" id="selectedEmoji"></div>
+</div>
+<!--LinktotheexternalJavaScriptfilethathandlestheemojigenerationandselection-->
+<scriptsrc="script.js"></script>
+</body>
+</html>
